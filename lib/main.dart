@@ -1,4 +1,6 @@
-import 'package:boiler_plate/example/bloc_example/View.dart';
+// import 'package:boiler_plate/example/bloc_example/View.dart';
+// import 'package:boiler_plate/example/dart_async.dart';
+import 'package:boiler_plate/example/navigation/Login.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -12,7 +14,7 @@ void main() => runApp(MyApp());
 //       theme: ThemeData(
 //         primarySwatch: Colors.blue,
 //       ),
-//       home: BlocExample(),
+//       home: Login(),
 //     );
 //   }
 // }

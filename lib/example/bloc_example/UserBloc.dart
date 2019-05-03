@@ -4,7 +4,6 @@ import 'package:boiler_plate/example/bloc_example/BlocProvider.dart';
 
 class UserBloc implements BlocBase {
   String _name = "";
-
   // stream to handle counter
   StreamController<String> _nameController = BehaviorSubject<String>();
   StreamSink<String> get _indAdd => _nameController.sink;

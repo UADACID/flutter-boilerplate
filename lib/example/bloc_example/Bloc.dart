@@ -4,7 +4,6 @@ import 'package:boiler_plate/example/bloc_example/BlocProvider.dart';
 
 class IncrementBloc implements BlocBase {
   int _counter;
-
   // stream to handle counter
   // BehaviorSubject for field or property
   StreamController<int> _counterController = BehaviorSubject<int>();
@@ -22,7 +21,7 @@ class IncrementBloc implements BlocBase {
     _actionController.stream.listen(_handleLogic);
   }
 
-  void _handleLogic(data) {
+  void _handleLogic(data) async {
     _counter = _counter + 1;
     _indAdd.add(_counter);
   }
