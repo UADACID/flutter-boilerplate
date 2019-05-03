@@ -1,6 +1,5 @@
 import 'package:boiler_plate/example/dart_async.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 void main() => runApp(MyApp());
 
