@@ -18,8 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Login(),
+      initialRoute: Login.routeName,
       routes: {
+        Login.routeName: (context) => Login(),
         Home.routeName: (context) => Home(),
         Settings.routeName: (context) => Settings(),
       },
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
 }
 
 class Login extends StatefulWidget {
+  static const routeName = '/';
   @override
   _LoginState createState() => _LoginState();
 }
